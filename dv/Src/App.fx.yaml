@@ -1,0 +1,7 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |+
+        =NewForm(Form1);
+        ClearCollect(Chois, Filter(AccountsRepro, Person.Email = User().Email));
+        
+
